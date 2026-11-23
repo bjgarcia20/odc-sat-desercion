@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAT basados en ML para la deserción estudiantil – ODC</title>
+<meta name="author" content="Brahan Julian Garcia Solorzano">
+<meta name="description" content="Objeto Digital de Conocimiento: Sistemas de Alerta Temprana basados en Machine Learning para la Predicción de Deserción Estudiantil en Educación Superior. Universidad de Cundinamarca, 2026.">
+<link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage" role="application" aria-label="Objeto Digital de Conocimiento">
+
+    <!-- Barra superior -->
+    <header id="topbar">
+      <div class="logo">
+        <img src="assets/logo_udec.png" alt="Logo Universidad de Cundinamarca" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="logo-fallback" aria-hidden="true">UdeC</span>
+      </div>
+      <div id="module-title" aria-live="polite"></div>
+      <div class="top-actions">
+        <button class="icon-btn" id="btn-home" title="Inicio" aria-label="Ir a la portada">🏠</button>
+        <button class="icon-btn" id="btn-menu" title="Menú" aria-label="Abrir menú de módulos" aria-expanded="false">☰</button>
+        <span id="screen-counter"></span>
+      </div>
+    </header>
+
+    <!-- Pantallas -->
+    <main id="screens"></main>
+
+    <!-- Avatar BRAI -->
+    <aside id="brai-zone" aria-label="Avatar BRAI">
+      <div id="brai-bubble"></div>
+      <div id="brai-wrap"></div>
+      <div class="brai-controls">
+        <button class="pill" id="btn-audio" aria-label="Escuchar a BRAI">▶ Escuchar</button>
+        <button class="pill ghost" id="btn-mute" aria-label="Silenciar">🔊</button>
+        <button class="pill ghost" id="btn-transcript" aria-label="Ver transcripción del audio">📄</button>
+      </div>
+    </aside>
+
+    <!-- Barra inferior -->
+    <footer id="bottombar">
+      <button class="nav-btn" id="btn-prev" aria-label="Pantalla anterior">◀ Anterior</button>
+      <div id="progress" aria-label="Progreso por módulo"></div>
+      <div class="bottom-right">
+        <button class="nav-btn primary" id="btn-next" aria-label="Pantalla siguiente">Siguiente ▶</button>
+        <button class="icon-btn help" id="btn-help" aria-label="Ayuda de navegación">?</button>
+      </div>
+    </footer>
+
+    <!-- Menú lateral -->
+    <nav id="menu" aria-label="Menú del ODC" aria-hidden="true">
+      <div class="menu-head"><strong>Contenido del ODC</strong><button class="icon-btn" id="btn-menu-close" aria-label="Cerrar menú">✕</button></div>
+      <ul id="menu-list"></ul>
+    </nav>
+
+    <!-- Ventana emergente -->
+    <div id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-box">
+        <button class="icon-btn modal-close" aria-label="Cerrar">✕</button>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Transcripción -->
+    <div id="transcript" aria-hidden="true">
+      <div class="tr-head"><strong>Transcripción – Guion de BRAI</strong><button class="icon-btn" id="btn-tr-close" aria-label="Cerrar transcripción">✕</button></div>
+      <div class="tr-body"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/scorm.js?v=3"></script>
+<script src="js/brai.js?v=3"></script>
+<script src="js/content.js?v=3"></script>
+<script src="js/screens.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
+</body>
+</html>
