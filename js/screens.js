@@ -749,11 +749,14 @@ SCREEN_INIT.p18 = function (el) {
 SCREEN_HTML.p19 = function () {
   return '<h2 class="sc-title"><small>Metadatos</small>Créditos y licencia</h2><div class="row">' +
   '<div class="card grow"><table style="width:100%;font-size:14px;border-collapse:collapse">' +
-    [['Área de conocimiento', 'Ingeniería, Tecnología e Innovación — Analítica y Ciencia de Datos'], ['Nombre del material', META.titulo], ['Autor', META.autor], ['Diseño y desarrollo', META.autor], ['Imágenes', META.autor], ['Sonidos y voces', META.autor], ['Fecha de creación', '21/10/2026'], ['Nivel educativo', 'Intermedio'], ['Programa', 'Especialización en Analítica y Ciencia de Datos · CTI · Universidad de Cundinamarca']].map(function (r) {
+    [['Área de conocimiento', 'Ingeniería, Tecnología e Innovación — Analítica y Ciencia de Datos'], ['Nombre del material', META.titulo], ['Autor', META.autor], ['Diseño y desarrollo', META.autor], ['Imágenes', 'Avatar, ilustraciones y gráficas: ' + META.autor + '. Logotipo y fotografía del campus: Universidad de Cundinamarca (ver fuentes en Recursos)'], ['Sonidos y voces', META.autor], ['Fecha de creación', '21/10/2026'], ['Nivel educativo', 'Intermedio'], ['Programa', 'Especialización en Analítica y Ciencia de Datos · CTI · Universidad de Cundinamarca']].map(function (r) {
       return '<tr style="border-bottom:1px solid var(--borde)"><td class="bold" style="padding:7px 8px;width:190px;color:var(--verde-osc)">' + r[0] + '</td><td style="padding:7px 8px">' + r[1] + '</td></tr>'; }).join('') + '</table></div>' +
   '<div class="col" style="width:330px">' +
     '<div class="card center"><img src="assets/cc-by-nc-sa.png" alt="Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0" style="width:180px"><p class="small mt6">Este ODC se distribuye bajo licencia <b>Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)</b>.</p></div>' +
-    '<div class="card gray small" style="line-height:1.45"><b>Recursos (TASL)</b><br>• Avatar BRAI, ilustraciones, gráficas y diagramas: creación propia del autor, CC BY-NC-SA 4.0.<br>• Íconos: emojis Unicode del sistema.<br>• Desarrollo: HTML5, CSS y JavaScript (código abierto), empaquetado SCORM 1.2.<br>• Datos de las gráficas: tomados de las referencias citadas (APA 7).</div></div></div>';
+    '<div class="card gray small" style="line-height:1.4;font-size:12px;overflow-wrap:anywhere"><b>Recursos (TASL)</b><br>• Avatar BRAI, ilustraciones, gráficas y diagramas: creación propia del autor, CC BY-NC-SA 4.0.<br>' +
+    '• Logotipo institucional: Universidad de Cundinamarca (s. f.). https://www.ucundinamarca.edu.co/wp-content/uploads/extended-logo-3.png<br>' +
+    '• Fotografía de portada, sede Chía: Universidad de Cundinamarca (s. f.). https://www.ucundinamarca.edu.co/wp-content/uploads/chia-un-referente-educativo-en-constante-crecimiento-2.jpg<br>' +
+    '• Insignia de licencia: Creative Commons. https://creativecommons.org/licenses/by-nc-sa/4.0/<br>• Íconos: emojis Unicode del sistema.<br>• Desarrollo: HTML5, CSS y JavaScript (código abierto), empaquetado SCORM 1.2.<br>• Datos de las gráficas: tomados de las referencias citadas (APA 7).</div></div></div>';
 };
 
 /* ================= P20 · REFERENCIAS ================= */
